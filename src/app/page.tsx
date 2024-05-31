@@ -1,95 +1,20 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { List, Button } from "@/components";
 
-export default function Home() {
+export default function MainPage() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+    <main className="main">
+      <p>Next-UI is a powerful and flexible UI library built with Next.js and TypeScript. Designed to boost developer productivity and code quality, it offers:</p>
+      <List>
+        <li>Type Safety: TypeScript ensures type correctness at compile-time, preventing runtime errors.</li>
+        <li>Optimized Bundle Size: Code-splitting and tree-shaking techniques minimize bundle size for fast load times.</li>
+        <li>Extensible Design System: Easily implement your brand{`'`}s design with default design tokens and theming.</li>
+        <li>Accessibility Compliance: Follows WAI-ARIA standards for web accessibility.</li>
+        <li>Comprehensive Component Library: Provides a rich set of UI components like buttons, inputs, modals, tooltips, and tables.</li>
+      </List>
+      <p>Next-UI combines high development velocity with robust code quality. Its simple usage boosts productivity while its powerful features and extensibility handle complex requirements. Leverage Next-UI for your Next.js and React projects today.</p>
+      <Button disabled>
+        See You Soon...
+      </Button>
     </main>
   );
 }
