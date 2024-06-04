@@ -2,23 +2,28 @@
 @import "./reset";
 
 body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width:100vw;
+  height:100vh;
+  background-color: #ddd;
   font-family: Pretendard, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
 
 .page-wrap{
-  background-color: #f5f5f5;
+  padding: 20px;
+  width:80%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 20px;
 }
 
-.main {
-  display: flex;
-  gap:2rem;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 6rem;
-  overflow: hidden;
-  min-height: 100vh;
-  background-color: #fff;
-  border-radius: 2rem 2rem 0 0;
+.block{
+  display: block;
+}
+.text-center{
+  text-align: center;
 }

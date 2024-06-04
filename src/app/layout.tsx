@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import "../styles/common.scss";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import Lnb from "@/components/layout/Lnb";
 
 export const metadata: Metadata = {
-  title: "Next ui v0.0.1",
+  title: "NEXT-UI",
   description: "Reusable UI with Nextjs v14",
 };
 
@@ -16,10 +17,11 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <Header />
-        <div className="page-wrap">
+        {/* <Header /> */}
+        <Lnb />
+        <main className="page-wrap">
           {children}
-        </div>
+        </main>
         <Footer />
       </body>
     </html>

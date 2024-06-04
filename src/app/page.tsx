@@ -2,7 +2,8 @@ import { List, Button } from "@/components";
 
 export default function MainPage() {
   return (
-    <main className="main">
+    <section>
+      <h1>NEXT-UI</h1>
       <p>Next-UI is a powerful and flexible UI library built with Next.js and TypeScript. Designed to boost developer productivity and code quality, it offers:</p>
       <List>
         <li>Type Safety: TypeScript ensures type correctness at compile-time, preventing runtime errors.</li>
@@ -15,6 +16,6 @@ export default function MainPage() {
       <Button disabled>
         See You Soon...
       </Button>
-    </main>
+    </section>
   );
 }
