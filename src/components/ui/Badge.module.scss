@@ -1,0 +1,22 @@
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border:0;
+    font-weight: bold;
+    transition: all .2s linear;
+    border-radius: 10px;
+    line-height: 1rem;
+    &.sm{
+        padding: 0.1rem 0.3rem;
+        font-size: 0.6rem;
+    }
+    &.md{
+        padding: 0.3rem 0.5rem;
+        font-size: 0.75rem;
+    }
+    &.lg{
+        padding: 0.5rem 0.7rem;
+        font-size: 0.9rem;
+    }
+}

@@ -1,10 +1,15 @@
 .aside {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-right:1px solid #eee;
     position: fixed;
     top:0;
     left:0;
     z-index: 1;
     width:260px;
     min-height:100svh;
+    background-color: #fff;
     transition: transform .3s ease-in-out;
     transform: translateX(0);
     .toggle{
@@ -68,12 +73,9 @@
     }
 
     .nav{
-        padding:20px;
-        border-right:1px solid #eee;
+        padding:1.4rem;
         position: relative;
         width:260px;
-        min-height: 100svh;
-        background-color: #fff;
         transition: transform .3s ease-in-out;
         border-radius: 0 10px 10px 0;
         transform: translateX(-260px);
@@ -93,23 +95,36 @@
         text-align: center;
     }
     .sub{
-        padding:1rem 0;
-        font-size: 1.2rem;
+        font-size: 0.85rem;
         letter-spacing: -0.5px;
     }
     .list{
-        padding-left: 10px;
+        margin-top:1rem;
+        padding-left: 0.8rem;
         li{
+            display: flex;
+            gap:0.4rem;
+            align-items: center;
             font-size: 1rem;
             letter-spacing: -0.25px;
-            a:hover{
-                border-bottom: 1px solid #3cb1ff;
-                color:#3cb1ff;
+            a{
+                border-bottom: 1px solid transparent;
+                &:hover{
+                    border-bottom: 1px solid #3cb1ff;
+                    color:#3cb1ff;
+                }
             }
             & + li{
                 margin-top:0.3rem;
             }
         }
+        .not{
+            color:#c2c2c2;
+        }
+    }
+    .foot{
+        padding:10px;
+        text-align: center;
     }
 }
 

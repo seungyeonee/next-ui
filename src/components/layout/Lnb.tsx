@@ -3,6 +3,8 @@
 import Link from "next/link";
 import css from "./Lnb.module.scss";
 import { useState, useEffect, useRef } from "react";
+import { Badge } from "..";
+import { DATA } from "@/data";
 
 export default function Lnb() {
     const asideRef = useRef<any>();
@@ -25,12 +27,21 @@ export default function Lnb() {
             </button>
             <nav className={`${css.nav} ${isOpenNav ? css.open : ''}`}>
                 <h2 className={css.tit}><Link href={'/'} onClick={() => { setIsOpenNav(false) }}>NEXT-UI</Link></h2>
-                <h3 className={css.sub}>COMPONENTS</h3>
                 <ul className={css.list}>
-                    <li><Link href={'/button'} onClick={() => { setIsOpenNav(false) }}>Button</Link></li>
-                    <li><Link href={'/textInput'} onClick={() => { setIsOpenNav(false) }}>textInput</Link></li>
+                    <li><Link href={'/button'} onClick={() => { setIsOpenNav(false) }}>Button</Link> <Badge>UPDATE</Badge></li>
+                    <li><Link href={'/checkbox'} onClick={() => { setIsOpenNav(false) }}>Checkbox</Link> <Badge>UPDATE</Badge></li>
+                    <li className={css.not}>Input</li>
+                    <li className={css.not}>Switch</li>
+                    <li className={css.not}>Box</li>
+                    <li className={css.not}>Select</li>
+                    <li className={css.not}>Card</li>
+                    <li className={css.not}>Avatar</li>
                 </ul>
             </nav>
+            <div className={css.foot}>
+                <div className={css.sub}>last update : {DATA.LAST_UPDATE_DATE}</div>
+                <div className={css.sub}>lib version : {DATA.APP_VERSION}</div>
+            </div>
         </aside>
     );
 }

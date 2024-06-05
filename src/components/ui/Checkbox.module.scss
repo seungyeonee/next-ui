@@ -1,0 +1,10 @@
+.checkbox {
+    position: relative;
+    &:checked{
+        & + label{
+            &::after{
+                background-color: #1a3dd8;
+            }
+        }
+    }
+}
