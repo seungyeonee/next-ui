@@ -6,8 +6,8 @@ export default function ButtonPage() {
     return (
         <section className="card">
             <h2 className="h2">Button</h2>
-            <p>button ui component</p>
-            <h3 className="h3 sub">props</h3>
+            <p className="txt">Display a button</p>
+            <h3 className="h3 sub">Props</h3>
             <ul className="props">
                 <li className="name">size</li>
                 <li className="type">string</li>
@@ -26,11 +26,11 @@ export default function ButtonPage() {
                 <li className="init">-</li>
                 <li className="expl">button margin top (px)</li>
             </ul>
-            <h3 className="h3 sub">sample</h3>
+            <h3 className="h3 sub">Preview</h3>
             <Button>
                 BUTTON TEXT
             </Button>
-            <h3 className="h3 sub">code</h3>
+            <h3 className="h3 sub">Code</h3>
             <code>
                 <button className="btn-copy" onClick={() => {
                     handleCopyClipBoard('<Button>BUTTON TEXT</Button>')
