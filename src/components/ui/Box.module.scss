@@ -1,0 +1,39 @@
+.box {
+    display: flex;
+    &.left-top{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    &.left-center{
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &.left-bottom{
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    &.right-top{
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    &.right-center{
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &.right-bottom{
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    &.center-top{
+        align-items: flex-start;
+        justify-content: center;
+    }
+    &.center{
+        align-items: center;
+        justify-content: center;
+    }
+    &.center-bottom{
+        align-items: flex-end;
+        justify-content: center;
+    }
+}

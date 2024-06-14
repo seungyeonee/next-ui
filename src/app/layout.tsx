@@ -5,7 +5,7 @@ import Footer from "@/components/layout/Footer";
 import Lnb from "@/components/layout/Lnb";
 
 export const metadata: Metadata = {
-  title: "NEXT-UI",
+  title: "SUI_v0.0.1",
   description: "Reusable UI with Nextjs v14",
 };
 

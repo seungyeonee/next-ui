@@ -26,12 +26,12 @@ export default function Lnb() {
                 <span tabIndex={-1}></span>
             </button>
             <nav className={`${css.nav} ${isOpenNav ? css.open : ''}`}>
-                <h2 className={css.tit}><Link href={'/'} onClick={() => { setIsOpenNav(false) }}>NEXT-UI</Link></h2>
+                <h2 className={css.tit}><Link href={'/'} onClick={() => { setIsOpenNav(false) }}>SUI</Link></h2>
                 <ul className={css.list}>
                     <li><Link href={'/button'} onClick={() => { setIsOpenNav(false) }}>Button</Link> <Badge>UPDATE</Badge></li>
                     <li><Link href={'/checkbox'} onClick={() => { setIsOpenNav(false) }}>Checkbox</Link> <Badge>UPDATE</Badge></li>
                     <li className={css.not}>Input</li>
-                    <li className={css.not}>Switch</li>
+                    <li><Link href={'/switch'} onClick={() => { setIsOpenNav(false) }}>Switch</Link> <Badge>UPDATE</Badge></li>
                     <li className={css.not}>Box</li>
                     <li className={css.not}>Select</li>
                     <li className={css.not}>Card</li>

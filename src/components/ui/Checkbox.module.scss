@@ -1,10 +1,24 @@
 .checkbox {
+    display: inline-block;
     position: relative;
+    width:20px;
+    height:20px;
+    cursor: pointer;
+    appearance: none;
+    &::after{
+        display: block;
+        position: absolute;
+        width:20px;
+        height:20px;
+        background-color: #ddd;
+        transition: background-color .3s ease-in-out;
+        content: '';
+        border-radius: 3px;  
+    }
     &:checked{
-        & + label{
-            &::after{
-                background-color: #1a3dd8;
-            }
+        &::after{
+            background-color: #1a3dd8;
+   
         }
     }
 }

@@ -1,0 +1,50 @@
+.switch {
+    display: inline-block;
+    position: relative;
+    width:40px;
+    height:20px;
+    cursor: pointer;
+    appearance: none;
+    
+    &::before{
+        display: block;
+        position: absolute;
+        top:50%;
+        left:0;
+        z-index: 1;
+        width:14px;
+        height:14px;
+        background-color: #fff;
+        transition: transform .3s ease-in-out;
+        content: '';
+        transform: translate(4px, -50%);
+        border-radius: 14px;
+    }
+    &::after{
+        display: block;
+        position: absolute;
+        width:40px;
+        height:20px;
+        background-color: #ddd;
+        transition: background-color .3s ease-in-out;
+        content: '';
+        border-radius: 10px;
+    }
+    &:checked{
+        &::before{
+            transform: translate(23px, -50%);
+        }
+        &::after{
+            background-color: blueviolet;
+        }
+    }
+    &:disabled{
+        cursor: not-allowed;
+        &::before, &::after{
+            opacity: 0.5;
+        }
+        & ~ label{
+            cursor: not-allowed;
+        }
+    }
+}

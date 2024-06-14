@@ -5,8 +5,8 @@ export default function MainPage() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <section className="card">
-        <h1 className="h1">NEXT-UI</h1>
-        <p className="txt mb-4">Next-UI is a powerful and flexible UI library built with Next.js and TypeScript. Designed to boost developer productivity and code quality, it offers:</p>
+        <h1 className="h1">SUI</h1>
+        <p className="txt mb-4">SUI is a powerful and flexible UI library built with Next.js and TypeScript. Designed to boost developer productivity and code quality, it offers:</p>
         <hr />
         <List className="mt-4 mb-4">
           <li>Type Safety: TypeScript ensures type correctness at compile-time, preventing runtime errors.</li>
